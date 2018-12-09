@@ -99,12 +99,12 @@ $('.radioSelect5').on('click', function (storeTriviaBtnAnswer) {
             
             for (var i = 0; i < userAnswersLength; i++) 
                 {
-                    if (correctAnswer[i] === userAnswers[i]) {
-                        right++;
+                    if (correctAnswers[i] === userAnswers[i]) {
+                        right= right+1;
                     } else if (userAnswers[i] === undefined) {
-                        unanswered++;
+                        unanswered= unanswered+1;
                     } else {
-                        wrong++;
+                        wrong=wrong+1;
                     }
                 }
             }
@@ -120,26 +120,19 @@ $('.radioSelect5').on('click', function (storeTriviaBtnAnswer) {
             }	
 
             $(".submitBtn").on("click", function(){
+               $(".submitBtn").hide();
                 showScoreboard();
                 compare();
                 UserAnswers();
                 
-        
+                $(".timer").html('<h2> Time is up!</h2>');
                 $('.screen').css({
                     'display': 'none'
                 });
-
-                if(time > 0){
-                    timer.stop();
-                    $(".timer").html('<h2> Time is up!</h2>');
-                }
-                else{
-                    $(".timer").html('<h2> Time is up!</h2>');
-                }
             });
 
             $('.restartBtn').on('click', function () {
-
+                $(".submitBtn").hide();
                 right = 0;
                 wrong = 0;
                 unanswered = 0;
