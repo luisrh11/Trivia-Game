@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="jumbotron">
+        <h1 class="display-4">LUIS TRIVIA 2.0</h1>
+        <br>
+        <div class="timer"></div>
+        
+        
+        <div class="row aqua starter">
+          <button type="button" class="btn btn-default startBtn">Start</button>
+        </div> <!-- end starterScreen -->
+
+        <br>    
+        <div class="screen">
+        <div class="question1"><h3>Where is Luis from?</h3>
+          
+            <form class="question1Form">
+              <div class="radio">
+                <label><input class="radioSelect1" type="radio" name="question1" value="Venezuela">Venezuela</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect1" type="radio" name="question1" value="Colombia">Colombia</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect1" type="radio" name="question1" value="Russia">Russia</label>
+              </div>
+            </form>
+          </div> <!-- end question1 div -->
+
+          <div class="question2"><h3>How old is Luis?</h3>
+          
+            <form class="question2Form">
+              <div class="radio">
+                <label><input class="radioSelect2" type="radio" name="question2" value="18">18</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect2" type="radio" name="question2" value="20">20</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect2" type="radio" name="question2" value="19">19</label>
+              </div>
+            </form>
+          </div> <!-- end question2 div -->
+
+          <div class="question3"><h3>What is Luis' favorite music genre?</h3>
+          
+            <form class="question3Form">
+              <div class="radio">
+                <label><input class="radioSelect3" type="radio" name="question3" value="Rock">Rock</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect3" type="radio" name="question3" value="Salsa">Salsa</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect3" type="radio" name="question3" value="Cumbia">Cumbia</label>
+              </div>
+            </form>
+          </div> <!-- end question3 div -->
+
+          <div class="question4"><h3>What high school did Luis go to?</h3>
+          
+            <form class="question4Form">
+              <div class="radio">
+                <label><input class="radioSelect4" type="radio" name="question4" value="L C Bird">L C Bird</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect4" type="radio" name="question4" value="Thomas Dale">Thomas Dale</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect4" type="radio" name="question4" value="hispanic high school">hispanic high school</label>
+              </div>
+            </form>
+          </div> <!-- end question4 div -->
+
+          <div class="question5"><h3>what is Luis' favorite phone company?</h3>
+          
+            <form class="question5Form">
+              <div class="radio">
+                <label><input class="radioSelect5" type="radio" name="question5" value="Apple">Apple</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect5" type="radio" name="question5" value="Samsung">Samsung</label>
+              </div>
+              <div class="radio">
+                <label><input class="radioSelect5" type="radio" name="question5" value="Motorola">Motorola</label>
+              </div>
+            </form>
+          </div> <!-- end question5 div -->
+            </div>
+            <button type="button" class="btn btn-default submitBtn">Submit</button>
+            <div class="row yellow endScreen">
+                <h3 class="scoreBoard"></h3>
+              <button type="button" class="btn btn-default restartBtn">Restart</button>
+              
+            </div>
+
+    </div>
+
+    
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+    </body>
+</html>

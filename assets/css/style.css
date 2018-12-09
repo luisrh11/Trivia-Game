@@ -1,0 +1,19 @@
+.screen{
+    display: none;
+}
+.restartBtn{
+    display: none;
+}
+
+.endScreen{
+    text-align: center;
+}
+.timer{
+    text-align: center;
+}
+.jumbotron{
+    text-align: center;
+}
+.startBtn{
+    margin-left: 50%;
+}
